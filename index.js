@@ -1,7 +1,7 @@
 // index.js
 const express = require('express')
 const app = express()
-const PORT = 4000
+const PORT = 4000 || process.env.port;
 
 
 app.get('/home', (req, res) => {
