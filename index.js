@@ -5,7 +5,7 @@ const app = express();
 
 const mongoose = require("mongoose");
 
-const port = process.env;
+const port = 4000;
 
 const Said = require("./modeles/Ahmed.js");
 
