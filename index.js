@@ -25,22 +25,22 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true})); // هذا الكود خاص باستلام البيانات من نوع POST
 
 app.get('/', (req, res)=>{
-    console.log(req.query)
+    // console.log(req.query)
     res.render("form.ejs")
 });
 //******** create articale collection */
 app.post("/article" , async (req , res)=>{
-    const newartical = new Article({
-        title1: req.body.titleeee,
-        body1: req.body.boody,
-        numberoflike1: 213 
-    });
-    console.log(req.body)
+    // const newartical = new Article({
+    //     title1: req.body.titleeee,
+    //     body1: req.body.boody,
+    //     numberoflike1: 213 
+    // });
+    // console.log(req.body)
     // const ccc = req.body.name2
     // newartical.title = ccc;
     // newartical.body = "newbody";
     // newartical.numberoflike = 100;
-    await newartical.save()
+    // await newartical.save()
     res.render("Cruds.ejs")
 })
 
