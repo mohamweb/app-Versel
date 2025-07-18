@@ -1,5 +1,5 @@
 // index.js
-const render = require('ejs')
+const {render} = require('ejs')
 const express = require('express')
 const app = express()
 const PORT = 4000 || process.env.port;
