@@ -5,7 +5,7 @@ const app = express();
 
 const mongoose = require("mongoose");
 
-const port = 8080 || process.env.port;
+const port = 3000 || process.env.port;
 
 const Said = require("./modeles/Ahmed.js");
 
@@ -169,6 +169,6 @@ app.get("/editoneartical" , async (req,res)=>{
 })
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log("I am listing on port 3000")
 });
