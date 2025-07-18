@@ -4,9 +4,9 @@ const app = express()
 const PORT = 4000 || process.env.port;
 
 
-app.get('/home', (req, res) => {
-  res.status(200).json('Welcome, your app is working well');
-  res.render("form.ejs")
+app.get('/', (req, res) => {
+  // res.status(200).json('Welcome, your app is working well');
+  res.render("form.ejs");
 })
 
 
